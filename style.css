@@ -1,0 +1,84 @@
+body{
+    background-color:#780000 !important;
+    overflow: hidden;
+}
+.main-section-container{
+    background-color:#780000;
+    position: relative;
+}
+.navbar{
+    background-color: #003049;
+}
+.btn-color1{
+    background-color: #669BBC;
+}
+.footer-container{
+background-color: #FDF0D5;
+position: absolute;
+bottom: 0px;
+width: 100%;
+align-items: center;
+overflow-x: hidden;
+}
+#counterDiv{
+    display: none;
+    color: inherit;
+}
+.zIndex{
+    z-index: 10;
+    position: relative;
+}
+#stick1{
+    position: absolute;
+    left:0;
+    top: 30px;
+    width: 380px;
+    height: 20px;
+    background: rgb(180,132,58);
+    background: radial-gradient(circle, rgba(180,132,58,1) 0%, rgba(252,69,69,1) 100%);
+    animation: animationSlideRight;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+#stick2{
+    position: absolute;
+    right: 0;
+    bottom: 300px;
+    width: 380px;
+    height: 20px;
+    background: rgb(180,132,58);
+    background: radial-gradient(circle, rgba(180,132,58,1) 0%, rgba(252,69,69,1) 100%);
+    animation: animationSlideLeft;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes animationSlideLeft {
+    0%{
+       right: 0 
+    }
+    100%{
+        right: 120%;
+    }
+}
+@keyframes animationSlideRight {
+    0%{
+       left: 0 
+    }
+    100%{
+        left: 120%;
+    }
+}
+@keyframes animation1{
+    0% {width: 200px;
+        height: 200px;}
+    25% {width: 400px;
+        height: 400px}
+    50% {width: 200px;
+        height: 200px;}
+    75% {width: 400px;
+        height: 400px}
+    100% {width: 200px;
+        height: 200px;}
+}
